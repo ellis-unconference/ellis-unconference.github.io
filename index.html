@@ -50,10 +50,11 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#cfp">Call for sessions</a></li>
+          <li><a href="#call-sessions">Call for sessions</a></li>
+          <li><a href="#call-posters">Call for posters</a></li>
           <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#speakers">Invited speakers</a></li>
-          <li><a href="#accepted-sessions">Accepted sessions</a></li>
+          <!-- <li><a href="#speakers">Invited speakers</a></li> -->
+          <!-- <li><a href="#accepted-sessions">Accepted sessions</a></li> -->
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#tips">Tips for attendees</a></li>
         </ul>
@@ -68,9 +69,12 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/Paris.jpg" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/Paris.jpg" alt="" data-aos="fade-in" class="hero-bg">
 
       <div class="container d-flex flex-column align-items-center text-center mt-auto">
+        <div class="hero-logo text-center" data-aos="fade-up" style="width: 100%;">
+          <img src="assets/img/ELLIS_logo_white.png" alt="ELLIS logo" class="img-fluid">
+        </div>
         <h2 data-aos="fade-up" data-aos-delay="100" class=""><span>ELLIS</span> UnConference</h2>
         <h2 data-aos="fade-up" data-aos-delay="100" class="">A European Gathering on Machine Learning</h2>
         <p data-aos="fade-up" data-aos-delay="200">December 8, 2026</p>
@@ -78,7 +82,6 @@
       </div>
 
       <div class="about-info mt-auto position-relative">
-
         <div class="container position-relative" data-aos="fade-up">
           <div class="row">
             <div class="col-lg-12">
@@ -94,29 +97,23 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Call for sessions Section -->
-    <section id="cfp" class="schedule section">
 
-      <!-- Section Title -->
+    <section id="call-sessions" class="schedule section">
+
       <div class="container section-title" data-aos="fade-up">
         <h2>Call for sessions</h2>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="200">
-
         <p>
-          Blablabli blablablou
+          We will offer the opportunity to apply for hosting a 2 hours scientific session on the topic of your choice.
+        </p>
+        </p>
+          More information to come, stay tuned!
         </p>
 
-        <h3>Topics</h3>
-        <p>The potential topics include, but are not limited to:</p>
-        <ul class="fa-ul">
-          <li><span class="fa-li"><i class="fa fa-check"></i></span>Cool stuff</li>
-          <li><span class="fa-li"><i class="fa fa-check"></i></span>More cool stuff</li>
-        </ul>
-
+        <!--
         <h3>Submissions</h3>
-
         <p>
           We invite submissions of tutorials through the following <a href="work in progress">form</a>.
         </p>
@@ -125,12 +122,44 @@
         <ul class="fa-ul">
         <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Event date:</strong> December 8, 2026</li>
         </ul>
+        -->
+      </div>
+    </section>
+
+
+    <section id="call-posters" class="schedule section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Call for posters</h2>
       </div>
 
+      <div class="container" data-aos="fade-up" data-aos-delay="200">
+        <p>
+          You can present recent work accepted at a top machine learning venue during our poster session, come present your paper in Paris.
+        </p>
+        <p>
+          More information to come, stay tuned!
+        </p>
 
+        <!-- <h3>Topics</h3>
+        <p>The potential topics include, but are not limited to:</p>
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fa fa-check"></i></span>Cool stuff</li>
+          <li><span class="fa-li"><i class="fa fa-check"></i></span>More cool stuff</li>
+        </ul>
+
+        <h3>Submissions</h3>
+        <p>
+          We invite submissions of tutorials through the following <a href="work in progress">form</a>.
+        </p>
+
+        <h3>Important dates</h3>
+        <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Event date:</strong> December 8, 2026</li>
+        </ul> -->
       </div>
-    </section><!-- /Call for papers Section -->
-
+    </section>
+  
 
     <!-- Schedule Section -->
     <section id="schedule" class="schedule section">
@@ -141,44 +170,51 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-          
-          <!-- Schedule -->
           <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
             
             <div class="row schedule-item">
-              <div class="col-md-2"><time>09:00–11:00</time></div>
+              <div class="col-md-2">
+                <time>09:00–11:00</time>
+              </div>
               <div class="col-md-10">
                 <h4>Morning contributed sessions</h4>
-                <p>See below for details</p>
+                <p>To be announced</p>
               </div>
             </div>
 
             <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00–11:30</time></div>
+              <div class="col-md-2">
+                <time>11:00–11:30</time>
+              </div>
               <div class="col-md-10">
                 <h4>Coffee Break</h4>
               </div>
             </div>
 
             <div class="row schedule-item">
-              <div class="col-md-2"><time>11:30–12:30</time></div>
+              <div class="col-md-2">
+                <time>11:30–12:30</time>
+              </div>
               <div class="col-md-10">
-                <h4>Invited talks <span>Speaker 1, Speaker 2, Speaker 3</span></h4>
-                <p>See below for details</p>
+                <h4>Invited talks <span></span></h4>
+                <p>To be announced</p>
               </div>
             </div>
 
             <div class="row schedule-item">
-              <div class="col-md-2"><time>12:30–14:00</time></div>
+              <div class="col-md-2">
+                <time>12:30–14:00</time>
+              </div>
               <div class="col-md-10">
                 <h4>Lunch Break</h4>
               </div>
             </div>
 
             <div class="row schedule-item">
-              <div class="col-md-2"><time>14:00–16:00</time></div>
+              <div class="col-md-2">
+                <time>14:00–16:00</time>
+              </div>
               <div class="col-md-10">
                 <h4>Poster session</h4>
                 <p>Contributed Posters</p>
@@ -186,28 +222,33 @@
             </div>
 
             <div class="row schedule-item">
-              <div class="col-md-2"><time>16:00–16:30</time></div>
+              <div class="col-md-2">
+                <time>16:00–16:30</time>
+              </div>
               <div class="col-md-10">
                 <h4>Coffee Break</h4>
               </div>
             </div>
 
             <div class="row schedule-item">
-              <div class="col-md-2"><time>16:30–18:30</time></div>
+              <div class="col-md-2">
+                <time>16:30–18:30</time>
+              </div>
               <div class="col-md-10">
                 <h4>Afternoon contributed sessions</h4>
-                <p>See below for details</p>
+                <p>To be announced</p>
               </div>
             </div>
           
           </div><!-- End Schedule -->
         </div>
+      </div>
+    </section>
 
 
-    <!-- Speakers Section -->
+    <!--
     <section id="speakers" class="speakers section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Invited speakers</h2>
       <div class="container">
@@ -225,7 +266,7 @@
                 <div class="social">
                   <a href="website"><i class="bi bi-globe"></i></a>
                   <a href="scholar"><i class="bi bi-mortarboard"></i></a>
-                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
                 </div>
               </div>
             </div>
@@ -242,7 +283,7 @@
                 <div class="social">
                   <a href="website"><i class="bi bi-globe"></i></a>
                   <a href="scholar"><i class="bi bi-mortarboard"></i></a>
-                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
                 </div>
               </div>
             </div>
@@ -259,7 +300,7 @@
                 <div class="social">
                   <a href="website"><i class="bi bi-globe"></i></a>
                   <a href="scholar"><i class="bi bi-mortarboard"></i></a>
-                  <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
                 </div>
               </div>
             </div>
@@ -269,16 +310,16 @@
 
       </div>
 
-    </section><!-- /Speakers Section -->
+    </section>
+    -->
 
 
-      <!-- Accepted sessions Section -->
+    <!--
     <section id="accepted-sessions" class="schedule section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Accepted sessions</h2>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="200">
 
@@ -330,8 +371,8 @@
 
         </div>
 
-    </section><!-- /Accepted sessions Section -->
-
+    </section>
+    -->
 
 
     <!-- Sponsors Section -->
@@ -414,14 +455,11 @@
     </section><!-- /Sponsors Section -->
 
 
-
-    <!-- Tips Section -->
     <section id="tips" class="schedule section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Tips for attendees</h2>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="200">
 
@@ -434,15 +472,14 @@
         <h3>Poster printing</h3>
         <p>Participants are responsible for printing their own posters.</p>
 
-        <h4>Poster board specifications</h4>
+        <h3>Poster board specifications</h3>
         <ul class="fa-ul">
           <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Dimensions:</strong> ?</li>
           <li><span class="fa-li"><i class="fa fa-check"></i></span><strong>Fixing method:</strong> ?</li>
         </ul>
 
       </div>
-
-    </section><!-- /Tips Section -->
+    </section>
 
   </main>
 
