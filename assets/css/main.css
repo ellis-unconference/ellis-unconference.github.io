@@ -972,11 +972,11 @@ section,
 }
 
 .hero-logo {
-  margin-bottom: 25px;
+  margin-top: 25px;
 }
 .hero-logo img {
-  width: 250px;          /* controls the logo size — adjust to taste */
-  max-width: 45vw;       /* keeps it from getting too big on small screens */
+  width: 220px;          /* controls the logo size — adjust to taste */
+  max-width: 40vw;       /* keeps it from getting too big on small screens */
   height: auto;          /* preserves aspect ratio */
   filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4)); /* helps it stand out on the photo background */
 }
