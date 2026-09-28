@@ -1723,9 +1723,25 @@ section,
   margin: 12px 0 16px;
 }
 
-.registration .registration-box p:last-child {
-  margin-bottom: 0;
+.registration .registration-box p:last-of-type {
   color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.registration .registration-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 36px;
+  border-radius: 50px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.registration .registration-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
 }
 
 /*--------------------------------------------------------------
