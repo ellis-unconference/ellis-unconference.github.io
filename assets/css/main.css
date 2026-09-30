@@ -1802,6 +1802,42 @@ section,
   margin-right: 4px;
 }
 
+.sessions .session-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+}
+
+/* Each tag family sets --tag; background and border are tints of it */
+.sessions .tag {
+  --tag: #6c757d;
+  display: inline-block;
+  padding: 3px 11px;
+  border-radius: 50px;
+  font-size: calc(12.5px * var(--font-scale));
+  font-weight: 500;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--tag), black 25%);
+  background: color-mix(in srgb, var(--tag), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--tag), transparent 70%);
+  transition: background 0.2s;
+}
+
+.sessions .session-card:hover .tag {
+  background: color-mix(in srgb, var(--tag), transparent 80%);
+}
+
+.sessions .tag-models { --tag: #7b4fd6; }
+.sessions .tag-methods { --tag: #2f6fdb; }
+.sessions .tag-science { --tag: #1f9d63; }
+.sessions .tag-data { --tag: #d08a00; }
+.sessions .tag-agents { --tag: #0f9aa8; }
+.sessions .tag-society { --tag: #DF7162; }
+.sessions .tag-format { --tag: #6c757d; }
+
 /*--------------------------------------------------------------
 # Organisers Section
 --------------------------------------------------------------*/
