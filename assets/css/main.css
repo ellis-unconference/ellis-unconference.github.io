@@ -1752,6 +1752,32 @@ section,
   margin: 0 auto;
 }
 
+.sessions .session-slot {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.sessions .row + .session-slot {
+  margin-top: 56px;
+}
+
+.sessions .session-slot h3 {
+  font-size: calc(26px * var(--font-scale));
+  font-weight: 700;
+  margin: 0;
+}
+
+.sessions .session-slot time {
+  font-size: calc(16px * var(--font-scale));
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
 .sessions .session-card {
   display: flex;
   gap: 20px;
