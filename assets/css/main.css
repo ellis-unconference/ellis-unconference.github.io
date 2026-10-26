@@ -1370,6 +1370,42 @@ section,
   transform: scale(1.1);
 }
 
+.sponsors .sponsor-tier-title {
+  text-align: center;
+  font-size: calc(22px * var(--font-scale));
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.sponsors .sponsor-tier-title.gold {
+  color: #b8860b;
+}
+
+/* Logos stay on a single line and shrink together on narrow screens */
+.sponsors .sponsor-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(24px, 8vw, 96px);
+  margin-bottom: 48px;
+}
+
+.sponsors .sponsor-logo {
+  display: block;
+  min-width: 0;
+  transition: transform 0.3s;
+}
+
+.sponsors .sponsor-logo img {
+  display: block;
+  height: min(56px, 7vw);
+  width: auto;
+}
+
+.sponsors .sponsor-logo:hover {
+  transform: scale(1.05);
+}
+
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
