@@ -1164,6 +1164,38 @@ section,
   margin-bottom: 0;
 }
 
+.schedule .schedule-abstract {
+  margin-top: 8px;
+}
+
+.schedule .schedule-abstract summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--accent-color);
+  font-size: calc(15px * var(--font-scale));
+}
+
+.schedule .schedule-abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+.schedule .schedule-abstract summary i {
+  transition: transform 0.3s;
+}
+
+.schedule .schedule-abstract[open] summary i {
+  transform: rotate(180deg);
+}
+
+.schedule .schedule-abstract p {
+  font-style: normal;
+  margin-top: 8px;
+  text-align: justify;
+}
+
 /*--------------------------------------------------------------
 # Venue Section
 --------------------------------------------------------------*/
