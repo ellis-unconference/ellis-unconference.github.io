@@ -1413,12 +1413,17 @@ section,
   color: #b8860b;
 }
 
-/* Logos stay on a single line and shrink together on narrow screens */
+.sponsors .sponsor-tier-title.silver {
+  color: #8a8d91;
+}
+
+/* Logos shrink together on narrow screens and wrap when they no longer fit */
 .sponsors .sponsor-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: clamp(24px, 8vw, 96px);
+  gap: 32px clamp(24px, 4vw, 48px);
   margin-bottom: 48px;
 }
 
@@ -1432,6 +1437,15 @@ section,
   display: block;
   height: min(56px, 7vw);
   width: auto;
+}
+
+/* Stacked logos need extra height to match the visual weight of wide ones */
+.sponsors .sponsor-logo img.logo-stacked {
+  height: min(88px, 11vw);
+}
+
+.sponsors .sponsor-row.silver .sponsor-logo img {
+  height: min(52px, 6.5vw);
 }
 
 .sponsors .sponsor-logo:hover {
