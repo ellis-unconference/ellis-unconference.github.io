@@ -1980,3 +1980,201 @@ section,
   margin: 0;
   color: color-mix(in srgb, var(--default-color), transparent 35%);
 }
+
+/*--------------------------------------------------------------
+# Accepted Posters Page
+--------------------------------------------------------------*/
+.page-title .page-subtitle {
+  font-size: calc(17px * var(--font-scale));
+  line-height: 1.7;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+}
+
+.posters .posters-toolbar {
+  max-width: 900px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.posters .poster-search {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.posters .poster-search i {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  pointer-events: none;
+}
+
+.posters .poster-search input {
+  width: 100%;
+  padding: 12px 20px 12px 46px;
+  font-size: calc(16px * var(--font-scale));
+  color: var(--default-color);
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 50px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.posters .poster-search input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-color), transparent 85%);
+}
+
+.posters .poster-results {
+  font-size: calc(14px * var(--font-scale));
+  margin: 10px 0 22px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.posters .theme-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.posters .theme-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: calc(14px * var(--font-scale));
+  font-weight: 500;
+  color: var(--default-color);
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.posters .theme-chip i {
+  color: var(--accent-color);
+}
+
+.posters .theme-chip span {
+  font-size: calc(12px * var(--font-scale));
+  font-weight: 600;
+  padding: 0 7px;
+  border-radius: 50px;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+}
+
+.posters .theme-chip:hover {
+  color: var(--accent-color);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 50%);
+}
+
+.posters .poster-group {
+  scroll-margin-top: 100px;
+}
+
+.posters .poster-group + .poster-group {
+  margin-top: 56px;
+}
+
+.posters .poster-group-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.posters .poster-group-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  font-size: calc(18px * var(--font-scale));
+}
+
+.posters .poster-group-title h3 {
+  flex: 1;
+  min-width: 0;
+  font-size: calc(24px * var(--font-scale));
+  font-weight: 700;
+  margin: 0;
+}
+
+.posters .poster-group-icon,
+.posters .poster-count {
+  flex-shrink: 0;
+}
+
+.posters .poster-count {
+  font-size: calc(14px * var(--font-scale));
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.posters .poster-card {
+  height: 100%;
+  padding: 20px 24px;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-left: 3px solid color-mix(in srgb, var(--accent-color), transparent 40%);
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.posters .poster-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  border-left-color: var(--accent-color);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.07);
+}
+
+.posters .poster-card h4 {
+  font-size: calc(17px * var(--font-scale));
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 10px;
+}
+
+.posters .poster-card p {
+  font-size: calc(14.5px * var(--font-scale));
+  line-height: 1.5;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+.posters .poster-card p i {
+  color: var(--accent-color);
+  margin-right: 4px;
+}
+
+.posters .poster-card p strong {
+  font-weight: 600;
+  color: var(--default-color);
+}
+
+.posters .poster-empty {
+  text-align: center;
+  margin: 24px 0 0;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.posters .posters-intro {
+  max-width: 680px;
+  margin: 0 auto 28px;
+  font-size: calc(18px * var(--font-scale));
+  line-height: 1.6;
+}
